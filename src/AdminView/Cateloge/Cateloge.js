@@ -60,6 +60,61 @@ const Cateloge = () => {
           <div className="col-8">
             <h5 className='m-0'>Add Product Details</h5>
             <Banner />
+            {/* Price, Size & Inventory  */}
+            <div className="title">
+              <span className='fw-bold fs-6 m-0'>Price, Size and Inventory</span>
+            </div>
+            <hr />
+            <div className="row">
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product Name" />
+                  <label for="floatingInput">Product Name</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  {/* Valdation is pending for number */}
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product ID" />
+                  <label for="floatingInput">Style code/ Product ID</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  {/* Valdation is pending for number */}
+                  <select class="form-select">
+                  </select>
+                  <label for="floatingInput">GST</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  {/* Valdation is pending for number */}
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product ID" />
+                  <label for="floatingInput">Style code/ Product ID</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  {/* Valdation is pending for number */}
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product Price" />
+                  <label for="floatingInput">Selling Price</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  {/* Valdation is pending for number */}
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product MRP" />
+                  <label for="floatingInput">MRP</label>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Product Name" />
+                  <label for="floatingInput">Product Name</label>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="col-4 border-start border-2 border-dark">
             <Upload
