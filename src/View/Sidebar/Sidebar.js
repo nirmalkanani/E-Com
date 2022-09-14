@@ -62,7 +62,7 @@ const Sidebar = ({ toggle, settoggle }) => {
                     <ul className="s_menu-links">
                         {
                             Admin_Route.map((element, index) =>
-                                <li className="s_nav-link">
+                                <li className="s_nav-link" key={index}>
                                     <Link to={element.url}>
                                         <span className='s_icon'><i className={element.icon}></i></span>
                                         <span className="s_text nav-text">{element.name}</span>

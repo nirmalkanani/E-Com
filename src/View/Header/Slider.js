@@ -13,18 +13,18 @@ const Slider = () => {
 
     return (
         <div>
-            <Carousel autoplay>
-                <div>
-                    <h3 style={contentStyle}>1</h3>
+            <Carousel autoplay style={{height:"500px"}}>
+                <div style={contentStyle}>
+                    <img  src='./assets/images/01.jpg' className='img-fluid' style={{height:"500px"}}/>
                 </div>
-                <div>
-                    <h3 style={contentStyle}>2</h3>
+                <div style={contentStyle}>
+                    <img  src='./assets/images/02.jpg' className='img-fluid' style={{height:"500px"}}/>
                 </div>
-                <div>
-                    <h3 style={contentStyle}>3</h3>
+                <div style={contentStyle}>
+                    <img  src='./assets/images/03.jpg' className='img-fluid' style={{height:"500px"}}/>
                 </div>
-                <div>
-                    <h3 style={contentStyle}>4</h3>
+                <div style={contentStyle}>
+                    <img  src='./assets/images/04.jpg' className='img-fluid' style={{height:"500px"}}/>
                 </div>
             </Carousel>
         </div>

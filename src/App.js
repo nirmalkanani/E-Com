@@ -8,23 +8,23 @@ import DefaultNav from './View/Nav/Default'
 
 const App = () => {
 
-  const [role, setRole] = useState('admin')
+  const [role, setRole] = useState('admin');
 
-  const [ loader, setLoader ] = useState(false)
+  const [ loader, setLoader ] = useState(false);
 
   useEffect(() => {
-    setLoader(true)
+    setLoader(true);
     setTimeout(() => {
       setLoader(false)
     }, 3000);
-  },[])
+  },[]);
 
   return (
     <>
     {
       loader ? <Loader/> : <Suspense fallback={<Loader/>}>
       {
-        role == 'user' ?
+        role === 'user' ?
           <>
             <DefaultNav />
             <Routes>

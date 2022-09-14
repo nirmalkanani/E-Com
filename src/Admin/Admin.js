@@ -5,13 +5,13 @@ import { Admin_Final } from '../Routes'
 
 const Admin = () => {
 
-    const [toggle, settoggle] = useState(true)
+    const [toggle, setToggle] = useState(true);
 
     return (
         <div className='container-fluid'>
             <div className="d-flex row">
                 <div className={`${toggle ? ' col-md-1' : 'col-md-2'} d-none d-md-block`}  >
-                    <Sidebar toggle={toggle} settoggle={settoggle} />
+                    <Sidebar toggle={toggle} settoggle={setToggle} />
                 </div>
                 <div className={`${toggle ? 'col-12 col-md-11' : 'col-12 col-md-10'}`} >
                     <Suspense fallback={<div><h4>Loading</h4></div>}>
