@@ -83,6 +83,7 @@ const Cateloge = () => {
                 <div class="form-floating mb-3">
                   {/* Valdation is pending for number */}
                   <select class="form-select">
+                    <option>1</option>
                   </select>
                   <label for="floatingInput">GST</label>
                 </div>
